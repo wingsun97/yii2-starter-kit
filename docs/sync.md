@@ -2,7 +2,7 @@
 # Yii 2 Starter Kit Extra
 
 
-##SYNC A FORK
+## SYNC A FORK
 
 ### Configuring a remote for a fork
 To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git.
@@ -68,7 +68,7 @@ Tip: Syncing your fork only updates your local copy of the repository. To update
 
 ## Composer Tips
 
-###1. 仅更新单个库
+### 1. 仅更新单个库
 只想更新某个特定的库，不想更新它的所有依赖，很简单：
 ```
 composer update foo/bar  
@@ -94,7 +94,7 @@ Generating autoload files
 ```
 composer update --lock  
 ```
-###2. 不编辑composer.json的情况下安装库
+### 2. 不编辑composer.json的情况下安装库
 你可能会觉得每安装一个库都需要修改composer.json太麻烦，那么你可以直接使用require命令。
 ```
 composer require "foo/bar:1.0.0"  
@@ -109,14 +109,14 @@ $ cat composer.json
     }
 }
 ```
-###3. 派生很容易
+### 3. 派生很容易
 初始化的时候，你试过create-project命令么？
 ```
 composer create-project doctrine/orm path 2.2.0  
 ```
 这会自动克隆仓库，并检出指定的版本。克隆库的时候用这个命令很方便，不需要搜寻原始的URI了。
 
-###4. 考虑缓存，dist包优先
+### 4. 考虑缓存，dist包优先
 最近一年以来的Composer会自动存档你下载的dist包。默认设置下，dist包用于加了tag的版本，例如"symfony/symfony": "v2.1.4"，或者是通配符或版本区间，"2.1.*"或">=2.2,<2.3-dev"（如果你使用stable作为你的minimum-stability）。
 
 dist包也可以用于诸如dev-master之类的分支，Github允许你下载某个git引用的压缩包。为了强制使用压缩包，而不是克隆源代码，你可以使用install和update的--prefer-dist选项。
@@ -149,7 +149,7 @@ Memory usage: 4.96MB (peak: 5.57MB), time: 0.45s
 ```
 这里，twig/twig:1.12.2的压缩包被保存在~/.composer/cache/files/twig/twig/1.12.2.0-v1.12.2.zip。重新安装包时直接使用。
 
-###5. 若要修改，源代码优先
+### 5. 若要修改，源代码优先
 当你需要修改库的时候，克隆源代码就比下载包方便了。你可以使用--prefer-source来强制选择克隆源代码。
 ```
 composer update symfony/yaml --prefer-source  
@@ -171,14 +171,14 @@ Updating dependencies
     M Dumper.php
     Discard changes [y,n,v,s,?]?
 ```
-###为生产环境作准备
+### 为生产环境作准备
 最后提醒一下，在部署代码到生产环境的时候，别忘了优化一下自动加载：
 ```
 composer dump-autoload --optimize  
 ```
 安装包的时候可以同样使用--optimize-autoloader。不加这一选项，你可能会发现20%到25%的性能损失。
 
-###两种方式启用本镜像服务
+### 两种方式启用本镜像服务
 
 系统全局配置： 即将配置信息添加到 Composer 的全局配置文件 config.json 中。见“例1”
 
@@ -206,7 +206,7 @@ composer config repo.packagist composer https://packagist.phpcomposer.com
 }
 ```
 
-###NPM/Bower Dependency Manager for Composer
+### NPM/Bower Dependency Manager for Composer
 ```
 $ composer global require "fxp/composer-asset-plugin:~1.1"
 ```

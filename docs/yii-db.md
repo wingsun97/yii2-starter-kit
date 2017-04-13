@@ -241,7 +241,7 @@ $connection->createCommand()->update('user', ['status' => 1], 'age > 30')->execu
 $connection->createCommand()->delete('user', 'status = 0')->execute(); 
 ```
 
-##事务：
+## 事务：
 
 ### 事务的基本结构(多表更新插入操作请使用事务处理)  
 ```
