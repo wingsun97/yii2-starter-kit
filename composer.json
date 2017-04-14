@@ -48,7 +48,7 @@
     "bower-asset/jquery-slimscroll": "^1.3",
     "bower-asset/flot": "^0.8",
     "symfony/process": "^3.0",
-    "filsh/yii2-oauth2-server": "*",
+    "filsh/yii2-oauth2-server": "2.0.1.x-dev",
     "johnitvn/yii2-ajaxcrud": "*",
     "kartik-v/yii2-widgets": "*",
     "2amigos/yii2-qrcode-helper": "~1.0",
@@ -62,7 +62,8 @@
     "yiisoft/yii2-faker": "^2.0.0",
     "codeception/codeception": "^2.0",
     "codeception/specify": "^0.4.3",
-    "codeception/verify": "^0.3.0"
+    "codeception/verify": "^0.3.0",
+    "light/yii2-swagger": "~1.0.0"
   },
   "suggest": {
     "trntv/yii2-debug-xhprof": "dev-master@dev"
